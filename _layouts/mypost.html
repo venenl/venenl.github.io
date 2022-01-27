@@ -6,7 +6,7 @@
 <div class="page page-post">
   <h1 class="title" id="{{ page.title }}">{{ page.title }}</h1>
   {% if page.date %}
-  <div class="subtitle">{{site.author}} 于 {{ page.date | date: "%Y-%m-%d" }} 阅读量: <span id="<{{ site.baseurl | append: post.url }}>" class="waline-visitor-count" /></div>
+  <div class="subtitle">{{site.author}} 于 {{ page.date | date: "%Y-%m-%d" }} 阅读量: <span id="<Your/Path/Name>" class="waline-visitor-count" /></div>
   {% endif %}
   <div class="post">
     {{ content }}
@@ -17,15 +17,30 @@
   </div>
   {% endif %}
 </div>
-<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
-<div id="waline"></div>
-  <script>
-    Waline({
-      el: '#waline',
-        visitor: true, // 阅读量统计
-      serverURL: 'https://pl11.vercel.app',
-    });
-  </script>
+        <script>
+            //这一段是初始化Waline的,visitor: true记得开启
+            new Waline({
+                el:'#waline',
+                serverURL: 'https://pl11.vercel.app',
+                appId: 'kR0DrhYz290MWeAFzRc5vq73-MdYXbMMI',
+                appKey: 'yTOj3tkTwHdUNYq0CrfvTQPT',
+                avatar:'monsterid',
+                recordIP:false,
+                requiredFields:['nick'],
+                visitor: true,
+                //path:"/",
+                placeholder:"整两句..."
+            })
+            //这一段是加载最近评论的
+            window.addEventListener('load', function() {
+              Waline.Widget.RecentComments({
+                el: '#waline-recent',
+                serverURL: 'https://pl11.vercel.app',
+                count: 10
+              });
+            });
+        </script>
+
 {% include footer.html -%}
 {% include script.html -%}
 </body>
