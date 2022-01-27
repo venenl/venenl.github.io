@@ -1,32 +1,30 @@
 ---
 layout: mypost
-title: 关于我
+title: about Me
 ---
 
-> Hello 陌生人，欢迎访问 TMaize Blog
+> Hello 陌生人，欢迎访问 保安阿强的博客
 
-该博客托管于 GitHub Page，国内默认解析到腾讯云，以保证国内外的访问速度。留言页面使用腾讯的“吐个槽”，另外使用的腾讯的 MTA 分析工具统计访问量（下线了）
+书写关于保安阿强的Dreaam Job（保安）日常，也叫保安日记。
 
-主题是自己写的，见[tmaize-blog](https://github.com/TMaize/tmaize-blog)，喜欢的话可以给个小星星。另外欢迎添加友链，在[留言板](chat.html)留言即可
+点解认为保安系一份 Dreaam Job呢？原因好简单
 
-## 相关技能
+## 做保安的优点
 
-- 熟悉 JavaScript 语言， 熟练使用 Vue 全家桶,jQuery 等前端框架
+- 又不会影响生活质素
 
-- 熟悉 Java，NodeJs,Go 等后端语言
+- 良好的晋升机会（我的希望是在35随晋升保安队长，现任（副）
 
-- 后端框架 Spring，Hibernate，JFinal，Mybatis 略有了解
+- 吃饱等落班，落班等放假休息，最后就系等出粮
 
-- 数据库方面能熟练使用 MySQL,Oracle，MongoDB
+- 上夜班仲可以吃宵夜、打机和睡觉
 
-- Linux 的简单使用，各种服务的搭建
+- 跟我在家没甚麽分别，还有钱收
 
-- 能够使用 Git/SVN 对代码版本进行控制
+- 综合以上各个优点 称之为Dreaam Job好合理呀~！
 
 ## 联系我
 
-- QQ&nbsp;&nbsp;&nbsp;&nbsp;: 1772314831
+- 留言即可，等闲就复
 
-- Email&nbsp;: [tmaize@qq.com](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=YBQNAQkaBSAREU4DDw0)
 
-- GitHub: [https://github.com/tmaize](https://github.com/tmaize)
