@@ -17,20 +17,14 @@
   </div>
   {% endif %}
 </div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    <div id="comment"></div>
-  
-    <div id="comment" class="comments-area"></div>
-    <script>
-        new Valine({
-            el:'#comment',
-                appId: 'kR0DrhYz290MWeAFzRc5vq73-MdYXbMMI',
-                appKey: 'yTOj3tkTwHdUNYq0CrfvTQPT',
-                avatar:'monsterid',
-            placeholder:"讲两句???..."
-        })
-    </script>
+<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://pl11.vercel.app',
+    });
+  </script>
 {% include footer.html -%}
 {% include script.html -%}
 </body>
