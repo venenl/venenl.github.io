@@ -17,30 +17,14 @@
   </div>
   {% endif %}
 </div>
-        <script>
-            //这一段是初始化Waline的,visitor: true记得开启
-            new Waline({
-                el:'#waline',
-                serverURL: 'https://pl11.vercel.app',
-                appId: 'kR0DrhYz290MWeAFzRc5vq73-MdYXbMMI',
-                appKey: 'yTOj3tkTwHdUNYq0CrfvTQPT',
-                avatar:'monsterid',
-                recordIP:false,
-                requiredFields:['nick'],
-                visitor: true,
-                //path:"/",
-                placeholder:"整两句..."
-            })
-            //这一段是加载最近评论的
-            window.addEventListener('load', function() {
-              Waline.Widget.RecentComments({
-                el: '#waline-recent',
-                serverURL: 'https://pl11.vercel.app',
-                count: 10
-              });
-            });
-        </script>
-
+<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+<div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://pl11.vercel.app',
+    });
+  </script>
 {% include footer.html -%}
 {% include script.html -%}
 </body>
