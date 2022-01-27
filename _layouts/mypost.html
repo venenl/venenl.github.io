@@ -16,35 +16,20 @@
     {% include ext-adsense.html -%}
   </div>
   {% endif %}
-</div>
-      <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
-  <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
-      <div id="comment"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="comment"></div>
   
     <div id="comment" class="comments-area"></div>
-          <script>
-            //这一段是初始化Waline的,visitor: true记得开启
-            new Waline({
-                el:'#waline',
-                serverURL: 'https://pl11.vercel.app',
-                appId: 'kR0DrhYz290MWeAFzRc5vq73-MdYXbMMI',
-                appKey: 'yTOj3tkTwHdUNYq0CrfvTQPT',
-                avatar:'monsterid',
-                recordIP:false,
-                requiredFields:['nick'],
-                visitor: true,
-                //path:"/",
-                placeholder:"整两句..."
-            })
-            //这一段是加载最近评论的
-            window.addEventListener('load', function() {
-              Waline.Widget.RecentComments({
-                el: '#waline-recent',
-                serverURL: 'https://pl11.vercel.app',
-                count: 10
-              });
-            });
-        </script>
+    <script>
+        new Valine({
+            el:'#comment',
+            appId: 'zQtWkYDBWng6LElPfb1hH9iT-MdYXbMMI',
+            appKey: 'SK41j9uxfsN7zQFdl52jBIoH',
+            avatar:'monsterid'
+            placeholder:"评论可以一针见血..."
+        })
+    </script>
 {% include footer.html -%}
 {% include script.html -%}
 </body>
