@@ -1,6 +1,6 @@
 ---
 layout: mypost
-title: 我的私人日志
+title: 保安日记-Security Note
 categories: [保安日记]
 ---
 
