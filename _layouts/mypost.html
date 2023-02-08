@@ -8,12 +8,6 @@
   {% if page.date %}
   <div class="subtitle">{{site.author}} 于 {{ page.date | date: "%Y-%m-%d" }} 发布</div>
   
-  <div id="article-info">
-  <!-- ... -->
-  阅读量: <span class="waline-pageview-count" data-path="<Your/Path/Name>" />
-  <!-- ... -->
-</div>
-  
   {% endif %}
   <div class="post">
     {{ content }}
@@ -33,16 +27,6 @@
     });
   </script>
   
-  <div id="waline"></div>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-
-  init({
-    el: '#waline',
-    // ...
-    pageview: true, // 浏览量统计
-  });
-</script>
   
 {% include footer.html -%}
 {% include script.html -%}
