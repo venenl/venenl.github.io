@@ -29,6 +29,8 @@ tucaoUrl: https://waline.llov.eu.org
 menu:
   - title: 首页
     url: /
+  - title: 音乐
+    url: https://cloud.llov.eu.org/OneDrive/%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90/Music
   - title: 归类
     url: /pages/categories.html
   - title: 搜索
